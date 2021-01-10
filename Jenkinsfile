@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Backbase docker image...'
-                sh 'docker build -t backbase-sample-java:latest .'
+                sh 'docker build -t backbase-sample:latest .'
             }
         }
         stage('Push') {
